@@ -1,0 +1,77 @@
+{
+    "name": "aWhere",
+    "description": "aWhere Ag Data Management harnesses agriculture analytics to create unprecedented visibility and insight from farm level to national policy. Learn more at aWhere.com!",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/21116-developer-awhere-com.jpg",
+    "tags": [
+        "agriculture",
+        "general data",
+        "have api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/awhere\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "aWhere API Platform",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/21116-developer-awhere-com.jpg",
+            "humanURL": "http:\/\/www.awhere.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/awhere-api-platform-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/awhere-api-platform.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/awhere-api-platform-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/blog.awhere.com\/rss.xml"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/aWhereAPI"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.awhere.com"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/blog.awhere.com\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/awhere"
+        },
+        {
+            "type": "Developers",
+            "url": "http:\/\/developer.awhere.com\/"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/awhere.com"
+        },
+        {
+            "type": "Support",
+            "url": "http:\/\/www.awhere.com\/services-and-support"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/aWhere"
+        }
+    ]
+}
