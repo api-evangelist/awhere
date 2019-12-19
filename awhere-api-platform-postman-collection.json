@@ -1,0 +1,495 @@
+{
+    "id": "1020542e5c2c6fda6b588d86c9b574b3",
+    "name": "aWhere API Platform",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "015d8dc6abfd04ac4f9a386c148a3c91",
+            "name": "Agronomic Values & Accumulations",
+            "url": "httpsapi.awhere.com\/\/v2\/agronomics\/fields\/field1\/agronomicvalues\/2015-08-01,2015-08-03",
+            "description": "####Request\nThis API call gets calculated agronomics and accumulations at a field location. \n\nThe URL used here will get the values for a certain range of days. This is a very flexible API and so you're encouraged to review the [Agronomics Documentation](http:\/\/developer.awhere.com\/api\/reference\/agronomics\/values).\n\n_Tip: Remember to use a field ID that exists in your account. By default, this collection uses a default field ID of 'field1'_\n\n\n####Security\nThis API call uses the security Access T",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "de35a84b7a08749a60abae0f3b8f03b6",
+            "name": "Agronomic Norms",
+            "url": "httpsapi.awhere.com\/\/v2\/agronomics\/fields\/field1\/agronomicnorms\/08-01,08-03\/years\/2010,2014",
+            "description": "####Request\nThis API call gets the long term averages for agronomic values and accumulations at a field location. \n\nThe URL used here will get the values for a certain range of days over a certain range of years. This is a very flexible API and so you're encouraged to review the [Agronomics Documentation](http:\/\/developer.awhere.com\/api\/reference\/agronomics\/norms).\n\n_Tip: Remember to use a field ID that exists in your account. By default, this collection uses a default field ID of 'field1'_\n\n\n##",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "51c2ac641120239e28d4f6c2a246f8bb",
+            "name": "Get Fields List",
+            "url": "httpsapi.awhere.com\/\/v2\/fields",
+            "description": "####Request\nThis API call retrieves the list of fields in your account. \n\n[Get Fields Documentation](http:\/\/developer.awhere.com\/api\/reference\/fields\/get-fields)\n\n\n####Security\nThis API call uses the security Access Token that is retrieved with the \"Get a Token\" request. If you run that request first, it will save a token to Postman and this API will use it automatically. You can also see where the token should normally go by clicking the \"Headers\" tab below. The Authorization header holds the t",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "87e8e395c68e98bbeb1bc45be962634e",
+            "name": "Create a Field",
+            "url": "httpsapi.awhere.com\/\/v2\/fields",
+            "description": "####Request\nThis API call creates a field location in your account. Be sure to change the body payload. \n\n[Create Fields Documentation](http:\/\/developer.awhere.com\/api\/reference\/fields\/create-field)\n\n\n####Security\nThis API call uses the security Access Token that is retrieved with the \"Get a Token\" request. If you run that request first, it will save a token to Postman and this API will use it automatically. You can also see where the token should normally go by clicking the \"Headers\" tab below.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "2e70e3e64c1215e121b13cce4c683576",
+            "name": "Get a Single Field by ID",
+            "url": "httpsapi.awhere.com\/\/v2\/fields\/field1",
+            "description": "####Request\nThis API call retrieves a single field by ID.\n\n[Get Fields Documentation](http:\/\/developer.awhere.com\/api\/reference\/fields\/get-fields)\n\n\n####Security\nThis API call uses the security Access Token that is retrieved with the \"Get a Token\" request. If you run that request first, it will save a token to Postman and this API will use it automatically. You can also see where the token should normally go by clicking the \"Headers\" tab below. The Authorization header holds the token, replacing",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "0cb5e9c02b10b77b5ca24a700cea635b",
+            "name": "Update Field",
+            "url": "httpsapi.awhere.com\/\/v2\/fields\/field1",
+            "description": "####Request\nThis API call shows how to update the farm ID on a field location. You can also change the name.\n\n[Update Field Documentation](http:\/\/developer.awhere.com\/api\/reference\/fields\/update-field)\n\n\n####Security\nThis API call uses the security Access Token that is retrieved with the \"Get a Token\" request. If you run that request first, it will save a token to Postman and this API will use it automatically. You can also see where the token should normally go by clicking the \"Headers\" tab bel",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "77882f25e537ffe1f44127998fa94f42",
+            "name": "Get Plantings List for a Field",
+            "url": "httpsapi.awhere.com\/\/v2\/agronomics\/fields\/field1\/plantings",
+            "description": "####Request\nThis API call retrieves the list of plantings for a specific field in your account. \n\n[Get Plantings Documentation](http:\/\/developer.awhere.com\/api\/reference\/plantings\/get-plantings)\n\n\n####Security\nThis API call uses the security Access Token that is retrieved with the \"Get a Token\" request. If you run that request first, it will save a token to Postman and this API will use it automatically. You can also see where the token should normally go by clicking the \"Headers\" tab below. The",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "ea9f31c5af2ec33ec386be2674e1323b",
+            "name": "Create a Planting",
+            "url": "httpsapi.awhere.com\/\/v2\/agronomics\/fields\/field1\/plantings",
+            "description": "####Request\nThis API call creates a planting for a specific field in your account. \n\n__Note:__ You should at least change the dates in the request body.\n\n[Create Planting Documentation](http:\/\/developer.awhere.com\/api\/reference\/plantings\/create)\n\n\n####Security\nThis API call uses the security Access Token that is retrieved with the \"Get a Token\" request. If you run that request first, it will save a token to Postman and this API will use it automatically. You can also see where the token should n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "e0dcd5e500fd9d1460a999e26ded0fcb",
+            "name": "Update Part of a Planting",
+            "url": "httpsapi.awhere.com\/\/v2\/agronomics\/fields\/field1\/plantings\/current",
+            "description": "####Request\nThis API call shows how to update only a couple of fields in a planting instead of having to update the entire object.\n\n__Note:__ You probably what to change the date in the request body.\n\n[Update Planting Documentation](http:\/\/developer.awhere.com\/api\/reference\/plantings\/update)\n\n\n####Security\nThis API call uses the security Access Token that is retrieved with the \"Get a Token\" request. If you run that request first, it will save a token to Postman and this API will use it automatic",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "6dc61b38483caa02adb19b92f4a05b13",
+            "name": "Get Crops",
+            "url": "httpsapi.awhere.com\/\/v2\/agronomics\/crops",
+            "description": "####Request\nThis API call returns the list of currently available crops in the aWhere platform.\n\n[Crops Documentation](http:\/\/developer.awhere.com\/api\/reference\/crops).\n\n\n####Security\nThis API call uses the security Access Token that is retrieved with the \"Get a Token\" request. If you run that request first, it will save a token to Postman and this API will use it automatically. You can also see where the token should normally go by clicking the \"Headers\" tab below. The Authorization header hold",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "204c41d8050da0307ce4cdb1b8bc8910",
+            "name": "Get Models",
+            "url": "httpsapi.awhere.com\/\/v2\/agronomics\/models",
+            "description": "####Request\nThis API call returns the list of currently available models in the aWhere platform.\n\n[Crops Documentation](http:\/\/developer.awhere.com\/api\/reference\/models\/get-models).\n\n\n####Security\nThis API call uses the security Access Token that is retrieved with the \"Get a Token\" request. If you run that request first, it will save a token to Postman and this API will use it automatically. You can also see where the token should normally go by clicking the \"Headers\" tab below. The Authorizatio",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "3b72151eac4dcc57c131ce57a8923579",
+            "name": "Get Model Details",
+            "url": "httpsapi.awhere.com\/\/v2\/agronomics\/models\/BarleyGenericMSU\/details",
+            "description": "####Request\nThis API call returns the details about a particular model. Currently, growth stage models are available via the API, so the details are a list of the possible stages with GDD threshold information. \n\n[Model Details Documentation](http:\/\/developer.awhere.com\/api\/reference\/models\/details).\n\n\n####Security\nThis API call uses the security Access Token that is retrieved with the \"Get a Token\" request. If you run that request first, it will save a token to Postman and this API will use it ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "f3b9874f2b4e7fa539b22ebd1a133ac7",
+            "name": "Get Model Results",
+            "url": "httpsapi.awhere.com\/\/v2\/agronomics\/fields\/field1\/models\/BarleyGenericMSU\/results",
+            "description": "####Request\nThis API call returns the current results of a model based on the data provided for the identified field location. \n\n[Model Results Documentation](http:\/\/developer.awhere.com\/api\/reference\/models\/results).\n\n\n####Security\nThis API call uses the security Access Token that is retrieved with the \"Get a Token\" request. If you run that request first, it will save a token to Postman and this API will use it automatically. You can also see where the token should normally go by clicking the \"",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "e6cebcf23a12c4d0556da99ff350d55f",
+            "name": "Daily Observations",
+            "url": "httpsapi.awhere.com\/\/v2\/weather\/fields\/field1\/observations",
+            "description": "####Request\nThis API call gets the weather at a field location.\n\nThe default URL will get the last seven days of actual weather observations. You can add dates to the end of the URL to get the weather for a specific range of days, like so: \n\n`\/v2\/weather\/fields\/field1\/observations\/2015-08-01` gets a single day\n`\/v2\/weather\/fields\/field1\/observations\/2015-08-01,2015-08-15` gets everything from August 1-15\n\nYou can customize the response payload using query string parameters. Learn more in the [Da",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "bfb5907bb588e114cf4e05dae26b6530",
+            "name": "Forecasts",
+            "url": "httpsapi.awhere.com\/\/v2\/weather\/fields\/field1\/forecasts",
+            "description": "####Request\nThis API call gets the forecast at a field location.\n\nWith the default configuration you'll get the hourly forecast for today +8 days. Add dates to the end of the URL to request only specific days, like so: \n\n`\/v2\/weather\/fields\/field1\/forecasts\/YYYY-MM-DD` returns a single day\n`\/v2\/weather\/fields\/field1\/forecasts\/YYYY-MM-DD,YYYY-MM-DD` returns a range of days\n\nYou can also use query string parameters to customize the payloads. Read the [Forecast Documentation](http:\/\/developer.awher",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "240479bc904958c5dca08267398f0d23",
+            "name": "Norms",
+            "url": "httpsapi.awhere.com\/\/v2\/weather\/fields\/field1\/norms\/08-01,08-15\/years\/2010,2015",
+            "description": "####Request\nUse this API to calculate long-term averages for the weather for any set of days across any set of years (minumum 3). This is a very flexible API, and you're encouraged to review the [Weather Norms Documentation](http:\/\/developer.awhere.com\/api\/reference\/weather\/norms) for details.\n\n_Tip: Remember to use a field ID that exists in your account. By default, this collection uses a default field ID of 'field1'_\n\n####Security\nThis API call uses the security Access Token that is retrieved ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "e7f65ed610c744492ba4d89306cb92f0",
+            "name": "Current Conditions",
+            "url": "httpsapi.awhere.com\/\/v2\/weather\/fields\/field1\/currentconditions",
+            "description": "####Request\nThis API call provides a snapshot of recent weather using the weather station nearest to the field location.\n\n[Current Conditions Documentation](http:\/\/developer.awhere.com\/api\/reference\/weather\/current)\n\n_Tip: Remember to use a field ID that exists in your account. By default, this collection uses a default field ID of 'field1'_\n\n\n####Security\nThis API call uses the security Access Token that is retrieved with the \"Get a Token\" request. If you run that request first, it will save a ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        },
+        {
+            "id": "6a30cb4d169c090f0267d3958f242739",
+            "name": "Get a Token",
+            "url": "httpsapi.awhere.com\/\/oauth\/token",
+            "description": "This is the first API call you will make any time you use the API \n(but you only need to use once per hour). This request will \nrequest a security access token and save it to Postman. Later \nAPI calls will use the token from Postman's saved variables. \n\n[Authentication Documentation](http:\/\/developer.awhere.com\/api\/authentication)\n\nPrior to using this API call you should load the aWhere Environment\nfile into Postman and change the settings to your API Key and Secret.\nYou can also see where the k",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "grant_type",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "1020542e5c2c6fda6b588d86c9b574b3",
+            "rawModeData": ""
+        }
+    ]
+}
